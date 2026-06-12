@@ -17,9 +17,9 @@ const meta = {
     <p class="affil">
       <span class="label">Group:</span>
       <a
-        href="https://radulaski.physics.ucdavis.edu"
+        href="https://rlab.engineering.ucdavis.edu/"
         target="_blank"
-        rel="noopener noreferrer">Radulaski Laboratory</a
+        rel="noopener noreferrer">Quantum Nanophotonics Laboratory</a
       >, UC Davis (Aug 2024 – Present)
     </p>
 
@@ -36,32 +36,38 @@ const meta = {
     <div class="research-block">
       <h3>Analog Quantum Simulation of Lattice Gauge Theories</h3>
       <p>
-        Developing analog quantum simulations based on photonic cavity QED systems
-        to model lattice gauge theories. This includes simulation of open quantum
-        systems using the Quantum Toolbox in Python (QuTiP) to model coupled cavity
-        QED systems, and fabrication of 2D photonic crystal cavities in
-        silicon-on-insulator as the experimental platform.
+        Understanding how matter behaves and interacts at the most basic level requires simulating 
+        quantum field theories, which are the physical framework behind electromagnetism, the strong force, 
+        and much more physics. However, even the most powerful classical computers struggle to simulate this physics, 
+        especially for far-out-of-equilibrium physics. In my most recent work, in collaboration with the <a href = "https://www.phys.ethz.ch/the-department/people/person-detail.marinama.html">Marinkovic group</a> 
+        at ETH Zürich, we propose using arrays of optical or microwave cavities, 
+        where photons and atomic systems form hybrid quantum particles called polaritons, to serve as an analog quantum 
+        simulator of these theories. By engineering specific resonance conditions between the polaritonic states, 
+        the proposed quantum simulator would naturally obey the same mathematical rules as the target field theory, 
+        with no additional constraints needed. This approach is compatible with existing state-of-the-art photonic and 
+        superconducting quantum hardware, offering realistic near term quantum simulations of beyond-classically 
+        accessible physics. In the long run, quantum simulators such as these could answer some of the biggest 
+        unanswered questions in particle physics and beyond.
       </p>
     </div>
 
     <div class="research-block">
       <h3>Nanophotonic Devices with Color Centers</h3>
       <p>
-        Fabrication and characterization of nanophotonic devices in silicon and
-        silicon carbide with integrated color centers. Cleanroom nanofabrication
-        uses photolithography, reactive ion etching, e-beam deposition, chemical
-        vapor deposition, wet etching, and sputtering. Optical characterization
-        includes time-resolved photoemission experiments, cryogenic color center
-        photoluminescence measurements, and cavity and waveguide transmission
-        measurements.
+        Future quantum technologies will need to be able to communicate over a so called <em>Quantum Internet<\em>.
+        Color centers, which are atomic defects in the lattice of semiconductors, form localized electronic states
+        which can be used to store and communicate quantum information. Much of my research aims to integrate color centers
+        into nanophotonic devices to enhance their propreties for use as quantum memories or repeaters.
       </p>
     </div>
 
     <div class="research-block">
       <h3>Trapped Ion Quantum Computing</h3>
       <p>
-        Fabricating 2D Paul traps for a trapped ion experiment with on-chip
-        integrated photonics taped out from an industrial foundry (AIM Photonics).
+        One of the major challenges of trapped-ion quantum computation lies in the complexity of the optical systems
+        used to cool and manipulate the ions. This work, done in collaboration with UC Berkeley, Santa Barbara, and Irvine
+        aims to miniturize the optical components required for trapped ion quantum computation onto a scalable, 
+        chip-based integrated photonic platform.
       </p>
     </div>
   </section>
@@ -74,7 +80,7 @@ const meta = {
       <div class="past-item">
         <div class="past-header">
           <div>
-            <h3>Science Undergraduate Laboratory Intern</h3>
+            <h3>Post-Baccalaureate Researcher</h3>
             <p class="past-org">Lawrence Berkeley National Laboratory, Berkeley, CA</p>
           </div>
           <span class="past-dates">Jan – May 2024</span>
@@ -83,7 +89,7 @@ const meta = {
           <li>Laser frequency stabilization via Pound-Drever-Hall locking with high-finesse and ultra-low expansion cavities</li>
           <li>Designed and implemented a compact double-pass acousto-optic modulator optical layout for rack-mounted breadboard system</li>
           <li>Performed Rabi spectroscopy on a calcium ion in a Paul trap to study decoherence and dephasing</li>
-          <li>Contributed to full-stack trapped ion quantum application network testbed</li>
+          <li>Contributed to full-stack trapped ion quantum application network testbed at the QuantNET testbed across LBNL and UC Berkeley</li>
         </ul>
       </div>
 
@@ -96,9 +102,9 @@ const meta = {
           <span class="past-dates">May – Aug 2023</span>
         </div>
         <ul>
-          <li>Designed and constructed a scheme for optical homodyne tomography to reconstruct quantum states of light</li>
-          <li>Wrote instrument control scripts and maximum likelihood estimation algorithm to construct density matrices from field quadratures</li>
-          <li>Selected as one of two students to present research outcomes in keynote session (25-minute oral presentation to 200+ audience members)</li>
+          <li>Designed and constructed an experiment for optical homodyne tomography to reconstruct quantum states of light</li>
+          <li>Wrote instrument control scripts and maximum likelihood estimation algorithm to construct density matrices from experimentally measured field quadratures</li>
+          <li>Selected as one of eight out of 175 total interns to present research outcomes in keynote session (25-minute oral presentation to 200+ audience members)</li>
         </ul>
       </div>
 
@@ -126,7 +132,7 @@ const meta = {
           <span class="past-dates">Oct – Dec 2022</span>
         </div>
         <ul>
-          <li>Independently developed a cross-correlation algorithm for deterministic signal analysis</li>
+          <li>Developed a cross-correlation algorithm for deterministic signal analysis</li>
           <li>Developed simulations for an Arrhenius model in non-linear slow dynamics</li>
           <li>Contributed to a coda wave interferometry program</li>
         </ul>
@@ -153,19 +159,9 @@ const meta = {
     <h2 class="section-heading">Publications</h2>
 
     <ol class="pub-list">
-      <li class="pub-item pending">
-        <div class="pub-authors">
-          M. Klein, E. Hamdarsi, N. R. Gonzalez, Md. A. Adib, M. Radulaski.
-        </div>
-        <span class="pub-title">
-          Quantum simulation with coupled cavity arrays in silicon.
-        </span>
-        <div class="pub-venue">Manuscript in preparation.</div>
-      </li>
-
       <li class="pub-item">
         <div class="pub-authors">
-          N. R. Gonzalez*, T. Budde*, K. Kersic*, Z. Steele, A. H. Rubin, J. C.
+          <b>N. R. Gonzalez</b>*, T. Budde*, K. Kersic*, Z. Steele, A. H. Rubin, J. C.
           Pinto Barros, M. Radulaski, M. Marinkovic. <em>(*equal contribution)</em>
         </div>
         <a
@@ -183,7 +179,7 @@ const meta = {
       <li class="pub-item">
         <div class="pub-authors">
           A. H. Rubin, V. Zalandauskas, P. Saha, R. Poudel, A. Teien, L. Hofmann,
-          N. R. Gonzalez, M. E. Bathen, M. Radulaski.
+          <b>N. R. Gonzalez</b>, M. E. Bathen, M. Radulaski.
         </div>
         <a
           class="pub-title"
@@ -199,7 +195,7 @@ const meta = {
 
       <li class="pub-item">
         <div class="pub-authors">
-          V. A. Norman, S. Majety, A. H. Rubin, P. Saha, N. R. Gonzalez, J. Simo,
+          V. A. Norman, S. Majety, A. H. Rubin, P. Saha, <b>N. R. Gonzalez</b>, J. Simo,
           B. Palomarez, L. Li, P. B. Curro, S. Dhuey, S. Virasawmy, M. Radulaski.
         </div>
         <a
