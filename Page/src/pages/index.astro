@@ -11,31 +11,25 @@ const meta = {
 <PageLayout meta={meta}>
   <!-- ── Hero ─────────────────────────────────────────── -->
   <section class="hero">
-    <div class="hero-text">
-      <h1 class="name">Nathan R. González</h1>
-      <p class="role">PhD Student in Physics · University of California, Davis</p>
-      <p class="tags">
-        <span>Quantum Photonics</span>
-        <span>·</span>
-        <span>Cavity QED</span>
-        <span>·</span>
-        <span>Nanofabrication</span>
-      </p>
-      <div class="hero-links">
-        <a href="mailto:nrgonz@ucdavis.edu">nrgonz [at] ucdavis [dot] edu</a>
-        <span class="sep">·</span>
-        <a
-          href="https://www.linkedin.com/in/nathanrgonzalez"
-          target="_blank"
-          rel="noopener noreferrer">LinkedIn</a
-        >
-        <span class="sep">·</span>
-        <a href="/cv">CV</a>
-      </div>
-    </div>
-
-    <div class="hero-photo">
-      <img src="/photos/cover_photo.jpg" alt="Nathan González" />
+    <h1 class="name">Nathan R. González</h1>
+    <p class="role">PhD Student in Physics · University of California, Davis</p>
+    <p class="tags">
+      <span>Quantum Photonics</span>
+      <span>·</span>
+      <span>Cavity QED</span>
+      <span>·</span>
+      <span>Nanofabrication</span>
+    </p>
+    <div class="hero-links">
+      <a href="mailto:nrgonz@ucdavis.edu">nrgonz [at] ucdavis [dot] edu</a>
+      <span class="sep">·</span>
+      <a
+        href="https://www.linkedin.com/in/nathanrgonzalez"
+        target="_blank"
+        rel="noopener noreferrer">LinkedIn</a
+      >
+      <span class="sep">·</span>
+      <a href="/cv">CV</a>
     </div>
   </section>
 
@@ -43,6 +37,9 @@ const meta = {
   <section class="section">
     <h2 class="section-heading">About</h2>
     <div class="prose">
+      <div class="hero-photo">
+        <img src="/photos/cover_photo.jpg" alt="Nathan González" />
+      </div>
       <p>
         I'm a PhD student in the <a
           href="https://physics.ucdavis.edu"
@@ -52,14 +49,14 @@ const meta = {
           href="https://rlab.engineering.ucdavis.edu/"
           target="_blank"
           rel="noopener noreferrer">Quantum Nanophotonics Laboratory</a
-        > under Professor Marina Radulaski. My research investigates light and matter 
-          interactions at the nanoscale for applications in quantum information hardware, bridging 
+        > under Professor Marina Radulaski. My research investigates light and matter
+          interactions at the nanoscale for applications in quantum information hardware, bridging
           quantum optics, nanophotonic fabrication, and quantum information.
       </p>
       <p>
         Currently I am interested in an working on projects involving: (1) developing analog
-        quantum simulations coupled photonic cavity QED systems (presently I am thinking 
-        about how quantum simulations can be applied to lattice gauge theories), (2) fabricating and 
+        quantum simulations coupled photonic cavity QED systems (presently I am thinking
+        about how quantum simulations can be applied to lattice gauge theories), (2) fabricating and
         characterizing nanophotonic devices in silicon and silicon carbide that integrate color centers for quantum
         networking applications, and (3) developing scalable, integrated photonic platforms for trapped-ion quantum computers.
       </p>
@@ -68,16 +65,14 @@ const meta = {
           >summa cum laude</em
         >) at Gordon College, working on ultrasound
         pulse-echo measurements in mixed perovskite relaxors. Additionally, I have conducted research at a variety of national laboratories
-        including the National Institute of Standards and Technologies in Boulder, CO, Lawrence Berkeley National Laboratory, UC Berkeley, 
+        including the National Institute of Standards and Technologies in Boulder, CO, Lawrence Berkeley National Laboratory, UC Berkeley,
         Naval Research Laboratory, and the University of Rhode Island.
       </p>
     </div>
 
-    <div class="photo-wide" style="height: 100%; margin-top: 1.5rem;">
-      <img src="/photos/optics.jpg"/>
+    <div class="photo-wide" style="margin-top: 1.5rem;">
+      <img src="/photos/optics.jpg" />
     </div>
-
-
   </section>
 
   <!-- ── Research interests ────────────────────────────── -->
@@ -85,7 +80,7 @@ const meta = {
     <h2 class="section-heading">Research Interests</h2>
     <ul class="interest-list">
       <li>
-      Cavity QED and it's applications in quantum computing, networking, and simulations
+        Cavity QED and it's applications in quantum computing, networking, and simulations
       </li>
       <li>Analog quantum simulation using coupled photonic cavity arrays</li>
       <li>
@@ -178,17 +173,7 @@ const meta = {
 <style>
   /* ── Hero ─────────────────────────────────── */
   .hero {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    gap: 2rem;
     margin-bottom: 3rem;
-    flex-wrap: wrap;
-  }
-
-  .hero-text {
-    flex: 1;
-    min-width: 240px;
   }
 
   .name {
@@ -228,10 +213,22 @@ const meta = {
     color: var(--color-border);
   }
 
-  .hero-photo img,
-  .hero-photo .photo-placeholder {
-    width: 300px;
+  /* ── About photo float ────────────────────── */
+  .hero-photo {
+    float: right;
+    margin: 0 0 1rem 2rem;
+  }
+
+  .hero-photo img {
+    width: 180px;
     height: auto;
+    display: block;
+  }
+
+  .prose::after {
+    content: "";
+    display: table;
+    clear: both;
   }
 
   /* ── Sections ─────────────────────────────── */
@@ -249,6 +246,18 @@ const meta = {
     margin: 0 0 1.25rem;
     padding-bottom: 0.5rem;
     border-bottom: 1px solid var(--color-border);
+  }
+
+  /* ── Wide photo ───────────────────────────── */
+  .photo-wide {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .photo-wide img {
+    width: 100%;
+    height: auto;
+    display: block;
   }
 
   /* ── Interest list ────────────────────────── */
@@ -363,24 +372,19 @@ const meta = {
     width: 5.5rem;
   }
 
-  /* ── Wide photo placeholder ───────────────── */
-  .photo-wide {
-    width: 100%;
-    max-width: 100%;
-  }
-
+  /* ── Mobile ───────────────────────────────── */
   @media (max-width: 520px) {
-    .hero {
-      flex-direction: column-reverse;
-    }
-
     .name {
       font-size: 1.6rem;
     }
 
-    .hero-photo .photo-placeholder {
+    .hero-photo {
+      float: none;
+      margin: 0 0 1.25rem 0;
+    }
+
+    .hero-photo img {
       width: 100%;
-      height: 160px;
     }
   }
 </style>
