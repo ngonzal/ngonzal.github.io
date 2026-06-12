@@ -1,0 +1,243 @@
+---
+import PageLayout from "@/layouts/Base.astro";
+
+const meta = {
+  title: "Teaching",
+  description:
+    "Nathan González's teaching, mentoring, and outreach activities.",
+};
+---
+
+<PageLayout meta={meta}>
+  <h1 class="page-title">Teaching & Outreach</h1>
+
+  <!-- ── Teaching ──────────────────────────────────────── -->
+  <section class="section">
+    <h2 class="section-heading">Teaching</h2>
+
+    <div class="role-list">
+      <div class="role-item">
+        <div class="role-header">
+          <div>
+            <h3>Graduate Student Mentor</h3>
+            <p class="role-org">Radulaski Laboratory, University of California, Davis, CA</p>
+          </div>
+          <span class="role-dates">Aug 2024 – Present</span>
+        </div>
+        <ul>
+          <li>
+            Mentoring three undergraduate students on projects spanning all-photonic quantum
+            simulation, open quantum systems, and coupled cavity QED.
+          </li>
+          <li>
+            Mentoring a group of four students in the design of a circuit QED system as a
+            platform for quantum simulations.
+          </li>
+        </ul>
+      </div>
+
+      <div class="role-item">
+        <div class="role-header">
+          <div>
+            <h3>Teaching Assistant</h3>
+            <p class="role-org">Department of Physics, University of California, Davis, CA</p>
+          </div>
+          <span class="role-dates">Sep 2024 – Present</span>
+        </div>
+        <ul>
+          <li>
+            <strong>PHY 45 — Computational Physics</strong> (1 quarter, ~50 students).
+            Weekly office hours, lab sections, and grading of quizzes, exams, and projects.
+          </li>
+          <li>
+            <strong>PHY 7A / 7B / 7C — Introductory Physics for Biological Sciences</strong>
+            (5 quarters, 30–70 students per quarter). Weekly office hours and quiz prep
+            sessions, homework grading, exam proctoring, and exam review sessions.
+          </li>
+        </ul>
+      </div>
+
+      <div class="role-item">
+        <div class="role-header">
+          <div>
+            <h3>Teaching Assistant</h3>
+            <p class="role-org">Department of Physics, Gordon College, Wenham, MA</p>
+          </div>
+          <span class="role-dates">Aug 2022 – Dec 2023</span>
+        </div>
+        <ul>
+          <li>
+            Taught 3 semesters of introductory physics labs (~30 students per semester).
+            Set up and explained lab equipment and procedures; graded lab work and assignments.
+          </li>
+          <li>
+            Assisted with updating lab manuals, refreshing experiments, and developing new
+            experiments in collaboration with the course professor.
+          </li>
+        </ul>
+      </div>
+
+      <div class="role-item">
+        <div class="role-header">
+          <div>
+            <h3>Tutor</h3>
+            <p class="role-org">Academic Success Center, Gordon College, Wenham, MA</p>
+          </div>
+          <span class="role-dates">Aug – Dec 2021</span>
+        </div>
+        <ul>
+          <li>
+            Developed personalized study plans for students in Calculus 1 and assisted with
+            homework, projects, and exam preparation.
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Outreach ──────────────────────────────────────── -->
+  <section class="section">
+    <h2 class="section-heading">Outreach & Service</h2>
+
+    <div class="role-list">
+      <div class="role-item">
+        <div class="role-header">
+          <div>
+            <h3>Communications Officer</h3>
+            <p class="role-org">
+              Quantum Information Science and Technology Initiative (QuIST),
+              University of California, Davis, CA
+            </p>
+          </div>
+          <span class="role-dates">Aug 2025 – Present</span>
+        </div>
+        <ul>
+          <li>
+            Organize and coordinate external speaker events including live-streaming,
+            recording, and posting to YouTube.
+          </li>
+          <li>Keep the QuIST website up to date with events and announcements.</li>
+        </ul>
+      </div>
+
+      <div class="role-item">
+        <div class="role-header">
+          <div>
+            <h3>Graduate Student Mentor</h3>
+            <p class="role-org">
+              Quantum Computing at Davis Club, University of California, Davis, CA
+            </p>
+          </div>
+          <span class="role-dates">Nov 2025 – Present</span>
+        </div>
+        <ul>
+          <li>
+            Serve as a mentor for the quantum hardware journal club, meeting roughly
+            twice monthly as part of the undergraduate quantum computing club.
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!--
+    OPTIONAL PHOTO — classroom, student interaction, or event photo
+    Replace this placeholder with: <img src="/photos/teaching.jpg" alt="..." />
+  -->
+  <div class="photo-placeholder photo-wide" style="height: 200px; margin-bottom: 3rem;">
+    <span>🎓</span>
+    <span>Add a teaching or outreach photo here</span>
+    <code>public/photos/teaching.jpg</code>
+  </div>
+</PageLayout>
+
+<style>
+  .page-title {
+    font-size: 1.75rem;
+    font-weight: 700;
+    margin: 0 0 2.5rem;
+    color: var(--color-heading);
+  }
+
+  .section {
+    margin-bottom: 3rem;
+  }
+
+  .section-heading {
+    font-size: 1.1rem;
+    font-family: var(--font-mono);
+    color: var(--color-accent);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    font-weight: 600;
+    margin: 0 0 1.25rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid var(--color-border);
+  }
+
+  .role-list {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .role-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 1rem;
+    margin-bottom: 0.6rem;
+    flex-wrap: wrap;
+  }
+
+  .role-item h3 {
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: var(--color-heading);
+    margin: 0;
+  }
+
+  .role-org {
+    font-size: 0.85rem;
+    color: var(--color-muted);
+    margin: 0.15rem 0 0;
+    max-width: 520px;
+  }
+
+  .role-dates {
+    font-family: var(--font-mono);
+    font-size: 0.78rem;
+    color: var(--color-accent);
+    white-space: nowrap;
+    flex-shrink: 0;
+    padding-top: 0.2rem;
+  }
+
+  .role-item ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.35rem;
+  }
+
+  .role-item ul li {
+    font-size: 0.875rem;
+    color: var(--color-text);
+    padding-left: 1.25rem;
+    position: relative;
+    line-height: 1.65;
+  }
+
+  .role-item ul li::before {
+    content: "▸";
+    color: var(--color-accent);
+    position: absolute;
+    left: 0;
+  }
+
+  .photo-wide {
+    width: 100%;
+  }
+</style>

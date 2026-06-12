@@ -1,0 +1,408 @@
+---
+import PageLayout from "@/layouts/Base.astro";
+
+const meta = {
+  title: "Home",
+  description:
+    "Nathan R. González — PhD student in Physics at UC Davis, working on quantum photonics, cavity QED, and nanophotonic device fabrication.",
+};
+---
+
+<PageLayout meta={meta}>
+  <!-- ── Hero ─────────────────────────────────────────── -->
+  <section class="hero">
+    <div class="hero-text">
+      <h1 class="name">Nathan R. González</h1>
+      <p class="role">PhD Student in Physics · University of California, Davis</p>
+      <p class="tags">
+        <span>Quantum Photonics</span>
+        <span>·</span>
+        <span>Cavity QED</span>
+        <span>·</span>
+        <span>Nanofabrication</span>
+      </p>
+      <div class="hero-links">
+        <a href="mailto:nrgonz@ucdavis.edu">nrgonz@ucdavis.edu</a>
+        <span class="sep">·</span>
+        <a
+          href="https://www.linkedin.com/in/nathanrgonzalez"
+          target="_blank"
+          rel="noopener noreferrer">LinkedIn</a
+        >
+        <span class="sep">·</span>
+        <a href="/cv">CV</a>
+      </div>
+    </div>
+
+    <div class="hero-photo">
+      <!--
+        TO ADD YOUR PHOTO:
+        1. Place your image at  Page/public/photos/headshot.jpg
+        2. Replace the placeholder div below with:
+           <img src="/photos/headshot.jpg" alt="Nathan González" />
+      -->
+      <div class="photo-placeholder" style="width: 180px; height: 220px;">
+        <span>📷</span>
+        <span>Add headshot</span>
+        <code>public/photos/headshot.jpg</code>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Bio ──────────────────────────────────────────── -->
+  <section class="section">
+    <h2 class="section-heading">About</h2>
+    <div class="prose">
+      <p>
+        I'm a PhD student in the <a
+          href="https://physics.ucdavis.edu"
+          target="_blank"
+          rel="noopener noreferrer">Department of Physics</a
+        > at the University of California, Davis, working in the <a
+          href="https://radulaski.physics.ucdavis.edu"
+          target="_blank"
+          rel="noopener noreferrer">Radulaski Laboratory</a
+        > under Professor Marina Radulaski. My research lives at the intersection
+        of quantum optics, condensed matter physics, and quantum information.
+      </p>
+      <p>
+        My current work focuses on two parallel thrusts: (1) developing analog
+        quantum simulations of lattice gauge theories using coupled photonic cavity
+        QED systems, and (2) fabricating and characterizing nanophotonic devices in
+        silicon and silicon carbide that integrate color centers for quantum
+        networking applications. I also contribute to a trapped ion experiment with
+        on-chip photonics taped out from AIM Photonics.
+      </p>
+      <p>
+        Before coming to Davis I completed a B.S. in Physics (<em
+          >summa cum laude</em
+        >) at Gordon College, where I wrote an honors thesis on ultrasound
+        pulse-echo measurements in mixed perovskite relaxors. I have been fortunate
+        to do research at NIST Boulder, Lawrence Berkeley National Laboratory, and
+        the University of Rhode Island.
+      </p>
+    </div>
+
+    <!--
+      OPTIONAL LAB / CANDID PHOTO
+      Replace this placeholder with an <img> tag pointing to your photo.
+      Suggested: a lab photo or conference photo.
+    -->
+    <div class="photo-placeholder photo-wide" style="height: 220px; margin-top: 1.5rem;">
+      <span>🔬</span>
+      <span>Add a lab or conference photo here</span>
+      <code>public/photos/lab.jpg</code>
+    </div>
+  </section>
+
+  <!-- ── Research interests ────────────────────────────── -->
+  <section class="section">
+    <h2 class="section-heading">Research Interests</h2>
+    <ul class="interest-list">
+      <li>Analog quantum simulation of lattice gauge theories using photonic cavity arrays</li>
+      <li>
+        Nanofabrication of 2D photonic crystal cavities in silicon-on-insulator and
+        silicon carbide
+      </li>
+      <li>
+        Color center (NV, SiV) integration in nanophotonic devices for quantum
+        networking
+      </li>
+      <li>
+        Open quantum systems simulation using QuTiP; trapped ion quantum computing
+        with integrated photonics
+      </li>
+    </ul>
+  </section>
+
+  <!-- ── Recent publications ──────────────────────────── -->
+  <section class="section">
+    <h2 class="section-heading">Recent Publications</h2>
+    <ol class="pub-list">
+      <li>
+        <div class="pub-authors">
+          N. R. Gonzalez*, T. Budde*, K. Kersic*, Z. Steele, A. H. Rubin, J. C.
+          Pinto Barros, M. Radulaski, M. Marinkovic. <span class="equal-note"
+            >(*equal contribution)</span
+          >
+        </div>
+        <a
+          class="pub-title"
+          href="https://arxiv.org/abs/2606.02756"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Photonic Analog Quantum Simulation of (1+1)-Dimensional U(1) Lattice
+          Gauge Theory with Dynamical Matter.
+        </a>
+        <div class="pub-venue">arXiv:2606.02756 (2026)</div>
+      </li>
+      <li>
+        <div class="pub-authors">
+          A. H. Rubin, V. Zalandauskas, P. Saha, R. Poudel, A. Teien, L. Hofmann,
+          N. R. Gonzalez, M. E. Bathen, M. Radulaski.
+        </div>
+        <a
+          class="pub-title"
+          href="https://arxiv.org/abs/2605.04277"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Seeing the forbidden: overcoming optical selection rules through
+          nanophotonic integration.
+        </a>
+        <div class="pub-venue">arXiv:2605.04277 (2026)</div>
+      </li>
+      <li>
+        <div class="pub-authors">
+          V. A. Norman, S. Majety, A. H. Rubin, P. Saha, N. R. Gonzalez, J. Simo,
+          B. Palomarez, L. Li, P. B. Curro, S. Dhuey, S. Virasawmy, M. Radulaski.
+        </div>
+        <a
+          class="pub-title"
+          href="https://doi.org/10.1021/acsphotonics.5c00096"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Sub-2 Kelvin Characterization of Nitrogen-Vacancy Centers in Silicon
+          Carbide Nanopillars.
+        </a>
+        <div class="pub-venue">ACS Photonics 12(5), 2604–2611 (2025)</div>
+      </li>
+    </ol>
+    <a href="/research#publications" class="see-more">See all publications →</a>
+  </section>
+
+  <!-- ── News / Highlights ─────────────────────────────── -->
+  <section class="section">
+    <h2 class="section-heading">Recent Highlights</h2>
+    <ul class="news-list">
+      <li>
+        <span class="news-date">Mar 2026</span>
+        Presented at APS Global Physics Summit — analog quantum simulation of lattice gauge theories.
+      </li>
+      <li>
+        <span class="news-date">Jun 2025</span>
+        Contributed talk at Rochester Conference for Coherence and Quantum Science (CQS-12), Rochester, NY.
+      </li>
+      <li>
+        <span class="news-date">Nov 2025</span>
+        Invited seminar speaker at Lawrence Berkeley National Laboratory SULI Seminar Series.
+      </li>
+      <li>
+        <span class="news-date">Aug 2025</span>
+        Appointed Communications Officer for the UC Davis Quantum Information Science and Technology Initiative (QuIST).
+      </li>
+    </ul>
+  </section>
+</PageLayout>
+
+<style>
+  /* ── Hero ─────────────────────────────────── */
+  .hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 2rem;
+    margin-bottom: 3rem;
+    flex-wrap: wrap;
+  }
+
+  .hero-text {
+    flex: 1;
+    min-width: 240px;
+  }
+
+  .name {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--color-heading);
+    margin: 0 0 0.4rem;
+    line-height: 1.2;
+  }
+
+  .role {
+    font-size: 1rem;
+    color: var(--color-accent);
+    margin: 0 0 0.5rem;
+    font-family: var(--font-mono);
+  }
+
+  .tags {
+    font-size: 0.85rem;
+    color: var(--color-muted);
+    margin: 0 0 1.25rem;
+    display: flex;
+    gap: 0.4rem;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  .hero-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem 0.75rem;
+    font-size: 0.875rem;
+    align-items: center;
+  }
+
+  .hero-links .sep {
+    color: var(--color-border);
+  }
+
+  .hero-photo img,
+  .hero-photo .photo-placeholder {
+    width: 180px;
+    height: 220px;
+  }
+
+  /* ── Sections ─────────────────────────────── */
+  .section {
+    margin-bottom: 3rem;
+  }
+
+  .section-heading {
+    font-size: 1.15rem;
+    font-family: var(--font-mono);
+    color: var(--color-accent);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    font-weight: 600;
+    margin: 0 0 1.25rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid var(--color-border);
+  }
+
+  /* ── Interest list ────────────────────────── */
+  .interest-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .interest-list li {
+    padding-left: 1.25rem;
+    position: relative;
+    color: var(--color-text);
+  }
+
+  .interest-list li::before {
+    content: "▸";
+    color: var(--color-accent);
+    position: absolute;
+    left: 0;
+  }
+
+  /* ── Publications ─────────────────────────── */
+  .pub-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    counter-reset: pub;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .pub-list li {
+    counter-increment: pub;
+    padding-left: 2rem;
+    position: relative;
+  }
+
+  .pub-list li::before {
+    content: "[" counter(pub) "]";
+    color: var(--color-accent);
+    font-family: var(--font-mono);
+    font-size: 0.8rem;
+    position: absolute;
+    left: 0;
+    top: 0.15rem;
+  }
+
+  .pub-authors {
+    font-size: 0.875rem;
+    color: var(--color-muted);
+    margin-bottom: 0.2rem;
+  }
+
+  .equal-note {
+    font-style: italic;
+  }
+
+  .pub-title {
+    display: block;
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: var(--color-text);
+    margin-bottom: 0.2rem;
+    line-height: 1.5;
+  }
+
+  .pub-title:hover {
+    color: var(--color-accent-hover);
+  }
+
+  .pub-venue {
+    font-size: 0.8rem;
+    font-family: var(--font-mono);
+    color: var(--color-muted);
+  }
+
+  .see-more {
+    display: inline-block;
+    margin-top: 1rem;
+    font-family: var(--font-mono);
+    font-size: 0.875rem;
+  }
+
+  /* ── News ─────────────────────────────────── */
+  .news-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .news-list li {
+    display: flex;
+    gap: 1rem;
+    font-size: 0.9rem;
+    align-items: baseline;
+  }
+
+  .news-date {
+    font-family: var(--font-mono);
+    font-size: 0.78rem;
+    color: var(--color-accent);
+    white-space: nowrap;
+    flex-shrink: 0;
+    width: 5.5rem;
+  }
+
+  /* ── Wide photo placeholder ───────────────── */
+  .photo-wide {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  @media (max-width: 520px) {
+    .hero {
+      flex-direction: column-reverse;
+    }
+
+    .name {
+      font-size: 1.6rem;
+    }
+
+    .hero-photo .photo-placeholder {
+      width: 100%;
+      height: 160px;
+    }
+  }
+</style>

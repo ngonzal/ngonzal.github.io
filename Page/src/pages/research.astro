@@ -1,0 +1,501 @@
+---
+import PageLayout from "@/layouts/Base.astro";
+
+const meta = {
+  title: "Research",
+  description:
+    "Nathan González's research on quantum photonics, cavity QED, lattice gauge theories, and nanofabrication.",
+};
+---
+
+<PageLayout meta={meta}>
+  <h1 class="page-title">Research</h1>
+
+  <!-- ── Current research ─────────────────────────────── -->
+  <section class="section">
+    <h2 class="section-heading">Current Research</h2>
+    <p class="affil">
+      <span class="label">Group:</span>
+      <a
+        href="https://radulaski.physics.ucdavis.edu"
+        target="_blank"
+        rel="noopener noreferrer">Radulaski Laboratory</a
+      >, UC Davis (Aug 2024 – Present)
+    </p>
+
+    <!--
+      OPTIONAL PHOTO — lab setup, device SEM, or cleanroom photo
+      Replace placeholder with: <img src="/photos/research-setup.jpg" alt="..." />
+    -->
+    <div class="photo-placeholder photo-wide" style="height: 240px; margin-bottom: 1.5rem;">
+      <span>🔬</span>
+      <span>Add a research setup or device image here</span>
+      <code>public/photos/research-setup.jpg</code>
+    </div>
+
+    <div class="research-block">
+      <h3>Analog Quantum Simulation of Lattice Gauge Theories</h3>
+      <p>
+        Developing analog quantum simulations based on photonic cavity QED systems
+        to model lattice gauge theories. This includes simulation of open quantum
+        systems using the Quantum Toolbox in Python (QuTiP) to model coupled cavity
+        QED systems, and fabrication of 2D photonic crystal cavities in
+        silicon-on-insulator as the experimental platform.
+      </p>
+    </div>
+
+    <div class="research-block">
+      <h3>Nanophotonic Devices with Color Centers</h3>
+      <p>
+        Fabrication and characterization of nanophotonic devices in silicon and
+        silicon carbide with integrated color centers. Cleanroom nanofabrication
+        uses photolithography, reactive ion etching, e-beam deposition, chemical
+        vapor deposition, wet etching, and sputtering. Optical characterization
+        includes time-resolved photoemission experiments, cryogenic color center
+        photoluminescence measurements, and cavity and waveguide transmission
+        measurements.
+      </p>
+    </div>
+
+    <div class="research-block">
+      <h3>Trapped Ion Quantum Computing</h3>
+      <p>
+        Fabricating 2D Paul traps for a trapped ion experiment with on-chip
+        integrated photonics taped out from an industrial foundry (AIM Photonics).
+      </p>
+    </div>
+  </section>
+
+  <!-- ── Past research ────────────────────────────────── -->
+  <section class="section">
+    <h2 class="section-heading">Past Research</h2>
+
+    <div class="past-research-list">
+      <div class="past-item">
+        <div class="past-header">
+          <div>
+            <h3>Science Undergraduate Laboratory Intern</h3>
+            <p class="past-org">Lawrence Berkeley National Laboratory, Berkeley, CA</p>
+          </div>
+          <span class="past-dates">Jan – May 2024</span>
+        </div>
+        <ul>
+          <li>Laser frequency stabilization via Pound-Drever-Hall locking with high-finesse and ultra-low expansion cavities</li>
+          <li>Designed and implemented a compact double-pass acousto-optic modulator optical layout for rack-mounted breadboard system</li>
+          <li>Performed Rabi spectroscopy on a calcium ion in a Paul trap to study decoherence and dephasing</li>
+          <li>Contributed to full-stack trapped ion quantum application network testbed</li>
+        </ul>
+      </div>
+
+      <div class="past-item">
+        <div class="past-header">
+          <div>
+            <h3>Summer Undergraduate Research Fellow</h3>
+            <p class="past-org">National Institute of Standards and Technology, Boulder, CO</p>
+          </div>
+          <span class="past-dates">May – Aug 2023</span>
+        </div>
+        <ul>
+          <li>Designed and constructed a scheme for optical homodyne tomography to reconstruct quantum states of light</li>
+          <li>Wrote instrument control scripts and maximum likelihood estimation algorithm to construct density matrices from field quadratures</li>
+          <li>Selected as one of two students to present research outcomes in keynote session (25-minute oral presentation to 200+ audience members)</li>
+        </ul>
+      </div>
+
+      <div class="past-item">
+        <div class="past-header">
+          <div>
+            <h3>Undergraduate Research Assistant</h3>
+            <p class="past-org">Department of Physics, Gordon College, Wenham, MA</p>
+          </div>
+          <span class="past-dates">Feb 2022 – Dec 2023</span>
+        </div>
+        <ul>
+          <li>Investigated electric properties of novel relaxor ferroelectrics using ultrasound pulse-echo measurements</li>
+          <li>Measured Young's Modulus in K<sub>1-x</sub>Li<sub>x</sub>TaO<sub>3</sub> under varied external electric fields</li>
+          <li>Investigated a unique ferroelectric phase memory effect in KTa<sub>1-x</sub>Nb<sub>x</sub>O<sub>3</sub></li>
+        </ul>
+      </div>
+
+      <div class="past-item">
+        <div class="past-header">
+          <div>
+            <h3>Naval Research Enterprise Intern</h3>
+            <p class="past-org">Naval Research Laboratory, Washington, D.C. (Remote)</p>
+          </div>
+          <span class="past-dates">Oct – Dec 2022</span>
+        </div>
+        <ul>
+          <li>Independently developed a cross-correlation algorithm for deterministic signal analysis</li>
+          <li>Developed simulations for an Arrhenius model in non-linear slow dynamics</li>
+          <li>Contributed to a coda wave interferometry program</li>
+        </ul>
+      </div>
+
+      <div class="past-item">
+        <div class="past-header">
+          <div>
+            <h3>NSF Summer Research Fellow</h3>
+            <p class="past-org">University of Rhode Island Graduate School of Oceanography, Narragansett, RI</p>
+          </div>
+          <span class="past-dates">Jun – Aug 2022</span>
+        </div>
+        <ul>
+          <li>Led coastal surveys using unmanned aerial and surface vehicles to collect sonar and photogrammetric data</li>
+          <li>Designed rapid assessment tools for shoreline change, including full 3D spatial models from vegetation line to shallow depths</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Publications ──────────────────────────────────── -->
+  <section class="section" id="publications">
+    <h2 class="section-heading">Publications</h2>
+
+    <ol class="pub-list">
+      <li class="pub-item pending">
+        <div class="pub-authors">
+          M. Klein, E. Hamdarsi, N. R. Gonzalez, Md. A. Adib, M. Radulaski.
+        </div>
+        <span class="pub-title">
+          Quantum simulation with coupled cavity arrays in silicon.
+        </span>
+        <div class="pub-venue">Manuscript in preparation.</div>
+      </li>
+
+      <li class="pub-item">
+        <div class="pub-authors">
+          N. R. Gonzalez*, T. Budde*, K. Kersic*, Z. Steele, A. H. Rubin, J. C.
+          Pinto Barros, M. Radulaski, M. Marinkovic. <em>(*equal contribution)</em>
+        </div>
+        <a
+          class="pub-title"
+          href="https://arxiv.org/abs/2606.02756"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Photonic Analog Quantum Simulation of (1+1)-Dimensional U(1) Lattice
+          Gauge Theory with Dynamical Matter.
+        </a>
+        <div class="pub-venue">arXiv:2606.02756 (2026)</div>
+      </li>
+
+      <li class="pub-item">
+        <div class="pub-authors">
+          A. H. Rubin, V. Zalandauskas, P. Saha, R. Poudel, A. Teien, L. Hofmann,
+          N. R. Gonzalez, M. E. Bathen, M. Radulaski.
+        </div>
+        <a
+          class="pub-title"
+          href="https://arxiv.org/abs/2605.04277"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Seeing the forbidden: overcoming optical selection rules through
+          nanophotonic integration.
+        </a>
+        <div class="pub-venue">arXiv:2605.04277 (2026)</div>
+      </li>
+
+      <li class="pub-item">
+        <div class="pub-authors">
+          V. A. Norman, S. Majety, A. H. Rubin, P. Saha, N. R. Gonzalez, J. Simo,
+          B. Palomarez, L. Li, P. B. Curro, S. Dhuey, S. Virasawmy, M. Radulaski.
+        </div>
+        <a
+          class="pub-title"
+          href="https://doi.org/10.1021/acsphotonics.5c00096"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Sub-2 Kelvin Characterization of Nitrogen-Vacancy Centers in Silicon
+          Carbide Nanopillars.
+        </a>
+        <div class="pub-venue">ACS Photonics 12(5), 2604–2611 (2025)</div>
+      </li>
+    </ol>
+  </section>
+
+  <!-- ── Presentations ─────────────────────────────────── -->
+  <section class="section">
+    <h2 class="section-heading">Presentations</h2>
+
+    <h3 class="pres-subheading">International</h3>
+    <ul class="pres-list">
+      <li>
+        N. R. Gonzalez et al.
+        <em>Analog Quantum Simulation of Lattice Gauge Theories in a Cavity QED Platform.</em>
+        APS Global Physics Summit, March 16, 2026.
+      </li>
+      <li>
+        N. R. Gonzalez et al.
+        <em>Silicon carbide nanophotonics with integrated NV centers below 2 K.</em>
+        Contributed talk, Rochester Conference for Coherence and Quantum Science (CQS-12), Rochester, NY. June 25, 2025.
+      </li>
+    </ul>
+
+    <h3 class="pres-subheading">Regional</h3>
+    <ul class="pres-list">
+      <li>
+        N. R. Gonzalez.
+        <em>Analog Quantum Simulation of Lattice Gauge Theories in a Cavity QED Platform.</em>
+        Quantum Day seminar, UC Davis, Nov. 14, 2025.
+      </li>
+      <li>
+        N. R. Gonzalez.
+        Invited speaker, SULI Seminar Series, Lawrence Berkeley National Laboratory, Nov. 6, 2025.
+      </li>
+      <li>
+        N. R. Gonzalez.
+        <em>Analog Quantum Simulation of Lattice Gauge Theories in a Cavity QED Platform.</em>
+        Condensed matter lunch seminar, UC Davis, Oct. 21, 2025.
+      </li>
+      <li>
+        N. R. Gonzalez et al.
+        <em>Laser Frequency Stabilization and Tuning for a Trapped Ion Quantum Network.</em>
+        SULI Research Colloquium, LBNL, April 26, 2024.
+      </li>
+      <li>
+        N. R. Gonzalez.
+        <em>Ultrasound Pulse-Echo Measurements in the Mixed Perovskite Relaxor K<sub>1-x</sub>Li<sub>x</sub>TaO<sub>3</sub>.</em>
+        Undergraduate Honors Thesis Defense, Gordon College, Dec. 8, 2023.
+      </li>
+      <li>
+        N. R. Gonzalez et al.
+        <em>Tomography for Characterization of Non-Classical States in Quantum Networking.</em>
+        NIST SURF Research Colloquium Plenary Session, NIST Boulder, CO, Aug. 1, 2023.
+      </li>
+      <li>
+        N. R. Gonzalez et al.
+        <em>KTN and KLT Ferroelectric Phase Transitions Studied By Ultrasound Pulse-Echo.</em>
+        Sigma Xi Research Symposium, Endicott College, Beverly, MA.
+      </li>
+      <li>
+        N. R. Gonzalez and S. Licht.
+        <em>Assessing Shoreline Erosion Using Digital Elevation Models.</em>
+        SURF Oceanography Research Symposium, URI Graduate School of Oceanography.
+      </li>
+    </ul>
+  </section>
+</PageLayout>
+
+<style>
+  .page-title {
+    font-size: 1.75rem;
+    font-weight: 700;
+    margin: 0 0 2.5rem;
+    color: var(--color-heading);
+  }
+
+  .section {
+    margin-bottom: 3rem;
+  }
+
+  .section-heading {
+    font-size: 1.1rem;
+    font-family: var(--font-mono);
+    color: var(--color-accent);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    font-weight: 600;
+    margin: 0 0 1.25rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid var(--color-border);
+  }
+
+  .affil {
+    font-size: 0.9rem;
+    color: var(--color-muted);
+    margin-bottom: 1.25rem;
+  }
+
+  .label {
+    color: var(--color-text);
+    font-weight: 500;
+    margin-right: 0.3rem;
+  }
+
+  .research-block {
+    margin-bottom: 1.75rem;
+  }
+
+  .research-block h3 {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--color-heading);
+    margin: 0 0 0.4rem;
+  }
+
+  .research-block p {
+    color: var(--color-text);
+    font-size: 0.9rem;
+    margin: 0;
+    line-height: 1.75;
+  }
+
+  /* Past research */
+  .past-research-list {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .past-item h3 {
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: var(--color-heading);
+    margin: 0;
+  }
+
+  .past-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 1rem;
+    margin-bottom: 0.6rem;
+    flex-wrap: wrap;
+  }
+
+  .past-org {
+    font-size: 0.85rem;
+    color: var(--color-muted);
+    margin: 0.15rem 0 0;
+  }
+
+  .past-dates {
+    font-family: var(--font-mono);
+    font-size: 0.78rem;
+    color: var(--color-accent);
+    white-space: nowrap;
+    flex-shrink: 0;
+    padding-top: 0.2rem;
+  }
+
+  .past-item ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.35rem;
+  }
+
+  .past-item ul li {
+    font-size: 0.875rem;
+    color: var(--color-text);
+    padding-left: 1.25rem;
+    position: relative;
+    line-height: 1.6;
+  }
+
+  .past-item ul li::before {
+    content: "▸";
+    color: var(--color-accent);
+    position: absolute;
+    left: 0;
+  }
+
+  /* Publications */
+  .pub-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    counter-reset: pub;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .pub-item {
+    counter-increment: pub;
+    padding-left: 2.5rem;
+    position: relative;
+  }
+
+  .pub-item::before {
+    content: "[" counter(pub) "]";
+    color: var(--color-accent);
+    font-family: var(--font-mono);
+    font-size: 0.8rem;
+    position: absolute;
+    left: 0;
+    top: 0.1rem;
+  }
+
+  .pub-item.pending::before {
+    color: var(--color-muted);
+  }
+
+  .pub-authors {
+    font-size: 0.82rem;
+    color: var(--color-muted);
+    margin-bottom: 0.25rem;
+    line-height: 1.5;
+  }
+
+  .pub-title {
+    display: block;
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: var(--color-text);
+    margin-bottom: 0.25rem;
+    line-height: 1.5;
+    text-decoration: none;
+  }
+
+  a.pub-title {
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    color: var(--color-text);
+  }
+
+  a.pub-title:hover {
+    color: var(--color-accent);
+  }
+
+  .pub-venue {
+    font-family: var(--font-mono);
+    font-size: 0.78rem;
+    color: var(--color-muted);
+  }
+
+  /* Presentations */
+  .pres-subheading {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--color-heading);
+    margin: 1.25rem 0 0.75rem;
+    font-family: var(--font-mono);
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    letter-spacing: 0.05em;
+  }
+
+  .pres-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 0.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .pres-list li {
+    font-size: 0.875rem;
+    color: var(--color-text);
+    padding-left: 1.25rem;
+    position: relative;
+    line-height: 1.6;
+  }
+
+  .pres-list li::before {
+    content: "▸";
+    color: var(--color-accent);
+    position: absolute;
+    left: 0;
+  }
+
+  .photo-wide {
+    width: 100%;
+  }
+</style>
